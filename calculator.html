@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="calculator-body">
+      <input id="display" readonly />
+      <button class="ac" onclick="allclear()">AC</button>
+      <button class="operator" onclick="append('&divide;')">&divide;</button>
+      <button class="number" onclick="append('7')">7</button>
+      <button class="number" onclick="append('8')">8</button>
+      <button class="number" onclick="append('9')">9</button>
+      <button class="operator" onclick="append('&times;')">&times;</button>
+      <button class="number" onclick="append('4')">4</button>
+      <button class="number" onclick="append('5')">5</button>
+      <button class="number" onclick="append('6')">6</button>
+      <button class="operator" onclick="append('&minus;')">&minus;</button>
+      <button class="number" onclick="append('1')">1</button>
+      <button class="number" onclick="append('2')">2</button>
+      <button class="number" onclick="append('3')">3</button>
+      <button class="operator" onclick="append('&plus;')">&plus;</button>
+      <button class="number" id="zero" onclick="append('0')">0</button>
+      <button class="dot" onclick="append('.')">.</button>
+      <button class="equals" onclick="calculate()">&equals;</button>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
