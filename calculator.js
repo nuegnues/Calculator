@@ -38,8 +38,3 @@ function calculate() {
 function allclear() {
   document.getElementById("display").value = "";
 }
-
-function deleteValue() {
-  let nowValue = document.getElementById("display").value;
-  document.getElementById("display").value = nowvalue.slice(0, -1);
-}
